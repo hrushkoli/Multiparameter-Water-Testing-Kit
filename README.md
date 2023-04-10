@@ -22,5 +22,7 @@ This project works by using the Arduino board to process the data coming from th
 <td>Time (varchar 10)</td>
 </tr>
 </table>
+
 - Modify the ESP 8266 code and chang the database details
+
 - Upload the code to your Arduino and NodeMCU respectively
