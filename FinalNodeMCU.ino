@@ -1,29 +1,3 @@
-/*------------------------------------------------------------------------------
-  06/25/2019
-  Author: Makerbro
-  Platforms: ESP8266
-  Language: C++/Arduino
-  File: esp8266_firmware.ino
-  ------------------------------------------------------------------------------
-  Description: 
-  Code for YouTube video demonstrating how to communicate between an Arduino UNO
-  and an ESP8266.
-  https://youtu.be/6-RXqFS_UtU
-  
-  Do you like my videos? You can support the channel:
-  https://patreon.com/acrobotic
-  https://paypal.me/acrobotic
-  ------------------------------------------------------------------------------
-  Please consider buying products from ACROBOTIC to help fund future
-  Open-Source projects like this! We'll always put our best effort in every
-  project, and release all our design files and code for you to use. 
-
-  https://acrobotic.com/
-  https://amazon.com/acrobotic
-  ------------------------------------------------------------------------------
-  License:
-  Please see attached LICENSE.txt file for details.
-------------------------------------------------------------------------------*/
 #include <ESP8266WiFi.h>
 #include <ESP8266WebServer.h>
 #include <ESP8266HTTPClient.h>
@@ -36,8 +10,8 @@
 LiquidCrystal_I2C lcd(0x3F, 16, 2);
 
 ESP8266WebServer server;
-char* ssid = "Galaxy A73 5G9AF3";
-char* password = "9820703453";
+char* ssid = ""; //Your Wifi SSID
+char* password = ""; // Your WIFI Password
 void setup()
 {
   lcd.begin();
